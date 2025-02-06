@@ -25,8 +25,8 @@ const Banner = () => {
         <div className='md:flex-row flex-col-reverse flex gap-y-16 justify-center items-center'>
             <div className='text-white'>
                 <h3 className='md:text-4xl text-3xl font-semibold mb-2'>Hi, It's Me</h3>
-                <h1 className='md:text-5xl text-4xl ml-6 font-bold mb-2'>Jaber Ahmed Riyan</h1>
-                <h3 className='md:text-4xl text-3xl font-bold'>
+                <h1 className='md:text-5xl text-[32px] md:ml-6 ml-3 font-bold mb-2'>Jaber Ahmed Riyan</h1>
+                <h3 className='md:text-[30px] text-3xl font-bold'>
                     And I am a
                     <span className='text-[#0ef] ml-2' ref={textRef}></span></h3>
                 <div className='mb-6'>
