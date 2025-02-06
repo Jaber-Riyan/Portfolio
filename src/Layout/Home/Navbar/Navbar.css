@@ -1,0 +1,12 @@
+.text-glow {
+    transition: all;
+    transition: 0.3s ease-in-out;
+}
+.text-glow:hover {
+    color: #0ef;
+    text-shadow: 
+        0 0 10px #0ef, 
+        0 0 20px #0ef, 
+        0 0 40px #0ef, 
+        0 0 80px #0ef; /* Adds stronger spread */
+}
