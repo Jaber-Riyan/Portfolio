@@ -51,10 +51,10 @@ const Banner = () => {
              hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_30px_cyan] hover:bg-[#0ef] hover:text-black 
              transition-all duration-700 rounded-full' size={40} /></Link>
                 </div>
+
+                {/* resume button  */}
                 <div className='mt-8'>
                     <button
-                        type="button"
-                        onClick={() => window.open("https://www.facebook.com", "_blank")}
                         className="px-9 py-3 bg-[#0ef] rounded-3xl text-black font-bold
              shadow-[0_0_5px_#0ef,0_0_25px_#0ef] 
              hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_30px_cyan] 
