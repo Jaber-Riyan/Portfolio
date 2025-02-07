@@ -22,12 +22,12 @@ const Banner = () => {
         }
     }, [])
     return (
-        <div className='md:flex-row flex-col-reverse flex gap-y-16 justify-center items-center'>
+        <div className='lg:flex-row flex-col-reverse flex gap-y-16 justify-center items-center'>
             <div className='text-white'>
-                <h3 className='md:text-4xl text-3xl font-semibold mb-2'>Hi, It's Me</h3>
-                <h1 className='md:text-5xl text-[32px] md:ml-6 ml-3 font-bold mb-2'>Jaber Ahmed Riyan</h1>
-                <h3 className='md:text-[30px] text-3xl font-bold'>
-                    And I am a
+            <h3 className='md:text-4xl text-3xl font-semibold mb-2'>Hey there! I'm</h3>
+            <h1 className='md:text-5xl text-[32px] md:ml-6 ml-3 font-bold mb-2'>Jaber Ahmed Riyan</h1>
+                <h3 className='md:text-[35px] text-[28px] font-bold'>
+                    <span className='md:inline-block hidden'>A Passionate</span> <span className='md:hidden inline-block'>I am a</span>
                     <span className='text-[#0ef] ml-2' ref={textRef}></span></h3>
                 <div className='mb-6'>
                     <p className='md:w-[90%] mt-6 text-gray-300 md:text-xl text-[1rem]'>
@@ -68,7 +68,7 @@ const Banner = () => {
             <div className="relative group inline-block">
                 {/* Image */}
                 <img
-                    className="shadow-[0_0_100px_rgba(255,255,255,0.651)] rounded-full md:w-[900px] w-80 cursor-pointer hover:shadow-[0_0_100px_rgba(255,255,255)]"
+                    className="shadow-[0_0_100px_rgba(255,255,255,0.651)] rounded-full lg:w-[900px] md:w-[500px] w-80 cursor-pointer hover:shadow-[0_0_100px_rgba(255,255,255)]"
                     draggable={false}
                     onContextMenu={(e) => e.preventDefault()}
                     src={myImage}

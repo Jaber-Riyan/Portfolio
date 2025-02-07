@@ -1,25 +1,25 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll'
 import './Navbar.css'
 
 const Navbar = () => {
 
     const links =
         <>
-            <Link className='text-glow'>Home</Link>
-            <Link className='text-glow'>About</Link>
-            <Link className='text-glow'>Project</Link>
-            <Link className='text-glow'>Skills</Link>
-            <Link className='text-glow'>Contact</Link>
+            <Link to="home" smooth={true} duration={500} className='text-glow cursor-pointer'>Home</Link>
+            <Link to="about" smooth={true} duration={500} className='text-glow cursor-pointer'>About</Link>
+            <Link to="skills" smooth={true} duration={500} className='text-glow cursor-pointer'>Skills</Link>
+            <Link to="projects" smooth={true} duration={500} className='text-glow cursor-pointer'>Projects</Link>
+            <Link to="contact" smooth={true} duration={500} className='text-glow cursor-pointer'>Contact</Link>
         </>
 
     return (
         <div className=''>
             <div className="navbar">
                 <div className="navbar-start">
-                    <Link>
+                    <button>
                         <img className='w-20' src="https://i.ibb.co.com/1Jj5D5Qm/1-modified.png" alt="" />
-                    </Link>
+                    </button>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 text-white gap-4 text-[1rem] font-semibold">
@@ -45,11 +45,11 @@ const Navbar = () => {
                         <ul
                             tabIndex="0"
                             className="menu menu-sm dropdown-content bg-[#3a0f5e] text-white rounded-box mt-3 w-52 hover:bg-[#2e064edc] shadow right-0 font-semibold">
-                            <Link className='hover:bg-[#56158b] p-2 hover:rounded-lg'>Home</Link>
-                            <Link className='hover:bg-[#56158b] p-2 hover:rounded-lg'>About</Link>
-                            <Link className='hover:bg-[#56158b] p-2 hover:rounded-lg'>Project</Link>
-                            <Link className='hover:bg-[#56158b] p-2 hover:rounded-lg'>Skills</Link>
-                            <Link className='hover:bg-[#56158b] p-2 hover:rounded-lg'>Contact</Link>
+                            <Link to="home" smooth={true} duration={500} className='hover:bg-[#56158b] p-2 hover:rounded-lg cursor-pointer'>Home</Link>
+                            <Link to="about" smooth={true} duration={500} className='hover:bg-[#56158b] p-2 hover:rounded-lg cursor-pointer'>About</Link>
+                            <Link to="skills" smooth={true} duration={500} className='hover:bg-[#56158b] p-2 hover:rounded-lg cursor-pointer'>Skills</Link>
+                            <Link to="projects" smooth={true} duration={500} className='hover:bg-[#56158b] p-2 hover:rounded-lg cursor-pointer'>Project</Link>
+                            <Link to="contact" smooth={true} duration={500} className='hover:bg-[#56158b] p-2 hover:rounded-lg cursor-pointer'>Contact</Link>
                             <button type='button' onClick={() => window.open("www.facebook.com", "_blank")} className='p-3 bg-orange-500 rounded-xl hover:bg-orange-300'>Resume</button>
                         </ul>
                     </div>
