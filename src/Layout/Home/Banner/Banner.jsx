@@ -28,14 +28,14 @@ const Banner = () => {
             <h1 className='md:text-5xl text-[32px] md:ml-6 ml-3 font-bold mb-2'>Jaber Ahmed Riyan</h1>
                 <h3 className='md:text-[35px] text-[28px] font-bold'>
                     <span className='md:inline-block hidden'>A Passionate</span> <span className='md:hidden inline-block'>I am a</span>
-                    <span className='text-[#0ef] ml-2' ref={textRef}></span></h3>
+                    <span className='text-[#0ef] ml-2' ref={textRef}></span>
+                </h3>
                 <div className='mb-6'>
                     <p className='md:w-[90%] mt-6 text-gray-300 md:text-xl text-[1rem]'>
                         🚀 I'm a MERN Stack Developer with expertise in React.js, Node.js, Express.js, and MongoDB. I specialize in building modern, scalable, and efficient web applications that provide seamless user experiences.
                     </p>
                 </div>
                 <div className="flex gap-5">
-
                     {/* facebook  */}
                     <Link onClick={() => window.open('https://web.facebook.com/jaberriyanyan/', "_blank")}><LiaFacebook className='text-[#0ef] shadow-[0_0_5px_#0ef,0_0_25px_#0ef] 
              hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_30px_cyan] hover:bg-[#0ef] hover:text-black 

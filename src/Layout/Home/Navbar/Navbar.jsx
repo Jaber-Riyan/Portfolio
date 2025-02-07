@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll'
 import './Navbar.css'
+import logo from '../../../assets/1-modified.png'
 
 const Navbar = () => {
 
@@ -17,9 +18,9 @@ const Navbar = () => {
         <div className=''>
             <div className="navbar">
                 <div className="navbar-start">
-                    <button>
-                        <img className='w-20' src="https://i.ibb.co.com/1Jj5D5Qm/1-modified.png" alt="" />
-                    </button>
+                    <Link to="home" smooth={true} duration={500} className='cursor-pointer'>
+                        <img className='w-20' src={logo} alt="" />
+                    </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 text-white gap-4 text-[1rem] font-semibold">

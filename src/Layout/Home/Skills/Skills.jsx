@@ -33,8 +33,31 @@ const Skills = () => {
     ];
 
     const dsaSkills = [
-        { name: "Data Structures", icon: <PiTreeStructureFill size={40} /> },
-        { name: "Algorithms", icon: <SiThealgorithms size={40} /> },
+        {
+            name: "Data Structures", icon: <PiTreeStructureFill size={40} />, topics: [
+                "Singly Linked List",
+                "Double Linked List",
+                "Stack",
+                "Queue",
+                "Priority Queue",
+                "Binary Tree",
+                "BST & Heep",
+                "STL"
+            ]
+        },
+        { name: "Algorithms", icon: <SiThealgorithms size={40} />, topics: [
+            "Basics of Graph",
+            "Breadth First Search (BFS)",
+            "Depth First Search (DFS) and 2D Grid",
+            "Dijkstra Algorithm",
+            "Bellman Ford Algorithm",
+            "Floyd Warshall Algorithm",
+            "Dynamic Programming",
+            "0-1 Knapsack and Variations",
+            "Unbounded Knapsack and Variations",
+            "LCS DP and variations",
+            "Minimum Spanning Tree"
+        ] },
     ];
 
     const cssFrameworks = [
@@ -103,12 +126,23 @@ const Skills = () => {
                 </div>
 
                 {/* Data Structures & Algorithms */}
-                <h2 className="text-3xl font-bold text-center mb-9 para-strong-word-dsa">Data Structures & Algorithms</h2>
+                <h2 className="text-3xl font-bold text-center mb-9 para-strong-word-dsa">Data Structures & Algorithms (Hover It)</h2>
                 <div className="flex flex-wrap justify-center gap-6 mb-9">
                     {dsaSkills.map((skill, index) => (
                         <div key={index} className="bg-white/10 p-5 rounded-xl w-40 text-center shadow-[0_0_10px_#3498db] hover:shadow-[0_0_25px_#3498db] hover:bg-[#3498db] transition-all duration-500 flex flex-col">
-                            <div className="text-4xl mx-auto mb-2">{skill.icon}</div>
-                            <span className="text-lg font-semibold">{skill.name}</span>
+                            <div className='relative group inline-block'>
+                                <div className="text-4xl mx-auto mb-2 flex justify-center">
+                                    <span>{skill.icon}</span>
+                                </div>
+                                {/* Tooltip  */}
+                                <div className="absolute left-1/2 w-48 text-left -translate-x-1/2 bottom-full mb-2 px-3 py-1 rounded-lg bg-purple-800 text-white text-xs opacity-0 group-hover:opacity-100 transition duration-300 font-bold">
+                                    {
+                                        skill?.topics?.map((topic, index) => <h3 className='mb-1' key={index}>{index+1}. {topic}</h3>)
+                                    }
+                                </div>
+                            </div>
+
+                            <span className="text-base font-semibold">{skill.name}</span>
                         </div>
                     ))}
                 </div>
