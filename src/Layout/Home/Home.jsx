@@ -4,6 +4,7 @@ import Footer from './Footer/Footer';
 import Banner from './Banner/Banner';
 import AboutMe from './AboutMe/AboutMe';
 import Skills from './Skills/Skills';
+import Academic from './Academic/Academic';
 
 const Home = () => {
     return (
@@ -39,6 +40,14 @@ const Home = () => {
                 </section>
             </section>
             {/* skills section end  */}
+
+            {/* academic qualification section start */}
+            <section className="bg-[linear-gradient(-160deg,#562D5C_20%,#1A1A4D_90%)] bg-no-repeat pb-20 w-full bg-cover bg-center pt-20">
+                <section>
+                    <Academic></Academic>
+                </section>
+            </section>
+            {/* academic qualification section end */}
 
             {/* footer section start  */}
             <footer className=''>
