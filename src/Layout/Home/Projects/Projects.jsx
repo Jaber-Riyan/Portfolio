@@ -21,6 +21,16 @@ import TwoSix from '../../../assets/2ndProjects/6.PNG'
 import TwoSeven from '../../../assets/2ndProjects/7.PNG'
 // Second project all images end 
 
+// Second project all images start 
+import ThreeOne from '../../../assets/3rdProjects/1.PNG'
+import ThreeTwo from '../../../assets/3rdProjects/2.PNG'
+import ThreeThree from '../../../assets/3rdProjects/3.PNG'
+import ThreeFour from '../../../assets/3rdProjects/4.PNG'
+import ThreeFive from '../../../assets/3rdProjects/5.PNG'
+import ThreeSix from '../../../assets/3rdProjects/6.PNG'
+import ThreeSeven from '../../../assets/3rdProjects/7.PNG'
+// Second project all images end 
+
 
 
 
@@ -42,7 +52,7 @@ const projects = [
         githubLink: "https://github.com/Jaber-riyan/Traventure_Client",
         challenges: "Implementing real-time stock updates and optimizing database queries.",
         futurePlans: "Add AI-based product recommendations and a mobile app version.",
-        color: "#fff"
+        color: "white"
     },
     {
         name: "VisaSphere 🌐",
@@ -66,12 +76,13 @@ const projects = [
     {
         name: "Wandau 🏺",
         images: [
-            OneOne,
-            OneTwo,
-            OneThree,
-            OneFour,
-            OneFive,
-            OneSix
+            ThreeOne,
+            ThreeTwo,
+            ThreeThree,
+            ThreeFour,
+            ThreeFive,
+            ThreeSix, 
+            ThreeSeven
         ],
         technologies: ["React", "Node.js", "MongoDB", "Express.js", "Tailwind CSS", "DaisyUI", "React Toastify", "Firebase", "Animate.css", "JWT"],
         description: "Wandau is a responsive and user-friendly web application designed to manage and explore details about remarkable historical artifacts like the Rosetta Stone and Antikythera Mechanism. Users can browse detailed information, add new artifacts, and interact through likes. The platform offers private routes for managing personal entries and favorite artifacts, ensuring a rich and personalized user experience.",
@@ -96,7 +107,7 @@ const Projects = () => {
 
             <div className="flex flex-wrap justify-center gap-8">
                 {projects.map((project, index) => (
-                    <div key={index} className={`bg-white/10 p-5 rounded-xl w-80 transition hover:bg-[${project?.color}] hover:shadow-[0_0_30px_${project?.color}] shadow-[0_0_20px_${project?.color}] text-center`}>
+                    <div key={index} className={`bg-white/10 p-5 rounded-xl w-80 transition hover:bg-[#0ef] hover:shadow-[0_0_30px_#0ef] shadow-[0_0_20px_#0ef] text-center`}>
                         <h3 className="text-xl font-semibold text-left mb-4 text-white para-strong-word">{project.name}</h3>
                         <Carousel className="rounded-lg" autoPlay={true} interval={2000} infiniteLoop={true}>
                             {

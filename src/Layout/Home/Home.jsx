@@ -6,6 +6,7 @@ import AboutMe from './AboutMe/AboutMe';
 import Skills from './Skills/Skills';
 import Academic from './Academic/Academic';
 import Projects from './Projects/Projects';
+import Contact from './Contact/Contact';
 
 const Home = () => {
     return (
@@ -57,6 +58,14 @@ const Home = () => {
                 </section>
             </section>
             {/* projects section end  */}
+
+            {/* contact section start  */}
+            <section id='contact' className="bg-[linear-gradient(130deg,#1A1A4D_20%,#562D5C_90%)] bg-no-repeat pb-20 w-full bg-cover bg-center pt-20 border-b-2 border-gray-600">
+                <section className='lg:w-[100%] w-[90%] mx-auto'>
+                    <Contact></Contact>
+                </section>
+            </section>
+            {/* contact section end  */}
 
             {/* footer section start  */}
             <footer className=''>
