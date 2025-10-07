@@ -65,7 +65,7 @@ const projects = [
                 github: "https://github.com/ifratul36",
             }
         ],
-        roles: [
+        role: [
             "Team Leader",
             "Backend Developer"
         ],
@@ -87,6 +87,10 @@ const projects = [
             OneFive,
             OneSix
         ],
+        role: [
+            "Frontend Developer",
+            "Backend Developer"
+        ],
         technologies: ["React", "Node.js", "MongoDB", "Express.js", "Tailwind CSS", "DaisyUI", "React Toastify", "React Captcha", "Firebase", "JWT", "Stripe Payment Gateway", "Animate.css"],
         description: "Traventure is an advanced and interactive Tourism Management System designed to help travelers explore Bangladesh effortlessly. It provides rich insights into destinations, cultural experiences, tour packages, and local guides. Users can manage their bookings, share their travel stories, and engage with the travel community seamlessly.",
         liveLink: "https://traventuree.netlify.app/",
@@ -106,6 +110,10 @@ const projects = [
             TwoSix,
             TwoSeven
         ],
+        role: [
+            "Frontend Developer",
+            "Backend Developer"
+        ],
         technologies: ["React", "Node.js", "MongoDB", "Express.js", "Tailwind CSS", "DaisyUI", "React Toastify", "Firebase", "Animate.css"],
         description: "VisaSphere is a user-friendly Visa Navigator Portal designed to simplify the process of checking visa requirements, applying for visas online, and tracking applications. The platform provides a dynamic user interface, robust functionality, and seamless user experience for both casual travelers and frequent visa applicants.",
         liveLink: "https://visasphere.netlify.app/",
@@ -124,6 +132,10 @@ const projects = [
             ThreeFive,
             ThreeSix,
             ThreeSeven
+        ],
+        role: [
+            "Frontend Developer",
+            "Backend Developer"
         ],
         technologies: ["React", "Node.js", "MongoDB", "Express.js", "Tailwind CSS", "DaisyUI", "React Toastify", "Firebase", "Animate.css", "JWT"],
         description: "Wandau is a responsive and user-friendly web application designed to manage and explore details about remarkable historical artifacts like the Rosetta Stone and Antikythera Mechanism. Users can browse detailed information, add new artifacts, and interact through likes. The platform offers private routes for managing personal entries and favorite artifacts, ensuring a rich and personalized user experience.",
@@ -182,14 +194,14 @@ const Projects = () => {
                             )
                         }
                         {
-                            project?.roles && project.roles.length > 0 && (
+                            project?.role && project.role.length > 0 && (
                                 <div className="mt-2">
                                     <h1 className="text-xl md:text-2xl font-bold text-[#fff] mb-2 uppercase tracking-wide drop-shadow-[0_0_10px_#fff] text-left">
-                                        roles
+                                        role
                                     </h1>
 
                                     <div className="flex flex-wrap gap-1">
-                                        {project.roles.map((role, idx) => (
+                                        {project.role.map((role, idx) => (
                                             <button
                                                 key={idx}
                                                 rel="noopener noreferrer"
