@@ -71,10 +71,10 @@ export default function EditingVideos() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 1 }}
-        className="text-center text-gray-400 mt-10 text-sm md:text-base"
+      className="text-center text-gray-400 mt-10 text-sm md:text-base"
       >
-        🎞️ A collection of my creative edits — turning raw clips into cinematic stories.
-      </motion.p>
-    </div>
+      🎞️ A collection of my creative edits — turning raw clips into cinematic stories.
+    </motion.p>
+    </div >
   );
 }
