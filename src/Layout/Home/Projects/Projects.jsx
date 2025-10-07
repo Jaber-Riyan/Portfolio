@@ -21,7 +21,7 @@ import TwoSix from '../../../assets/2ndProjects/6.PNG'
 import TwoSeven from '../../../assets/2ndProjects/7.PNG'
 // Second project all images end 
 
-// Second project all images start 
+// Third project all images start 
 import ThreeOne from '../../../assets/3rdProjects/1.PNG'
 import ThreeTwo from '../../../assets/3rdProjects/2.PNG'
 import ThreeThree from '../../../assets/3rdProjects/3.PNG'
@@ -29,13 +29,50 @@ import ThreeFour from '../../../assets/3rdProjects/4.PNG'
 import ThreeFive from '../../../assets/3rdProjects/5.PNG'
 import ThreeSix from '../../../assets/3rdProjects/6.PNG'
 import ThreeSeven from '../../../assets/3rdProjects/7.PNG'
-// Second project all images end 
+// Third project all images end 
 
-
-
+// Fourth project all images start 
+import FourOne from '../../../assets/4thProjects/1.PNG'
+import FourTwo from '../../../assets/4thProjects/2.PNG'
+import FourThree from '../../../assets/4thProjects/3.PNG'
+import FourFour from '../../../assets/4thProjects/4.PNG'
+import FourFive from '../../../assets/4thProjects/5.PNG'
+import FourSix from '../../../assets/4thProjects/6.PNG'
+import FourSeven from '../../../assets/4thProjects/7.PNG'
+// Fourth project all images end 
+import { Link } from "react-router-dom";
 
 
 const projects = [
+    {
+        name: "Quizmania 💡 (Team Project)",
+        images: [
+            FourOne,
+            FourTwo,
+            FourThree,
+            FourFour,
+            FourFive,
+            FourSix,
+            FourSeven
+        ],
+        contributors: [
+            {
+                name: "Mahmuda Akter Mumu",
+                github: "https://github.com/mumuuh6"
+            },
+            {
+                name: "Ifratul Jannat Ritu",
+                github: "https://github.com/ifratul36",
+            }
+        ],
+        technologies: ["Next.js", "Gemini AI", "Node.js", "Loading Skeleton", "MongoDB", "Express.js", "Tailwind CSS", "ShadCN UI", "React Toastify", , "Next Auth", "JWT", "Animate.css"],
+        description: "QUIZMANIA is an educational quiz application that dynamically generates quizzes using AI, adapts difficulty based on user performance, and provides real-time feedback and analytics. The frontend is built with modern web technologies to ensure responsiveness, usability, and seamless interaction.",
+        liveLink: "https://quizzmaniaa.vercel.app",
+        githubLink: "https://github.com/Jaber-Riyan/Quizmania_Client",
+        challenges: "Implementing real-time stock updates and optimizing database queries.",
+        futurePlans: "Add AI-based product recommendations and a mobile app version.",
+        color: "white"
+    },
     {
         name: "Traventure 🌍",
         images: [
@@ -81,7 +118,7 @@ const projects = [
             ThreeThree,
             ThreeFour,
             ThreeFive,
-            ThreeSix, 
+            ThreeSix,
             ThreeSeven
         ],
         technologies: ["React", "Node.js", "MongoDB", "Express.js", "Tailwind CSS", "DaisyUI", "React Toastify", "Firebase", "Animate.css", "JWT"],
@@ -105,17 +142,43 @@ const Projects = () => {
                 </h2>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-8">
+            <div className="flex flex-wrap justify-left gap-8">
                 {projects.map((project, index) => (
                     <div key={index} className={`bg-white/10 p-5 rounded-xl w-80 transition hover:bg-[#0ef] hover:shadow-[0_0_30px_#0ef] shadow-[0_0_20px_#0ef] text-center`}>
                         <h3 className="text-xl font-semibold text-left mb-4 text-white para-strong-word">{project.name}</h3>
                         <Carousel className="rounded-lg" autoPlay={true} interval={2000} infiniteLoop={true}>
                             {
                                 project?.images?.map((image, idx) => <div key={idx}>
-                                    <img src={image} alt="Image 1" />
+                                    <img src={image} alt={`Image ${idx + 1}`} />
                                 </div>)
                             }
                         </Carousel>
+                        {
+                            project?.contributors && project.contributors.length > 0 && (
+                                <div className="mt-10 text-center">
+                                    <h1 className="text-xl md:text-2xl font-bold text-[#0ef] mb-4 uppercase tracking-wide drop-shadow-[0_0_10px_#0ef]">
+                                        Contributors
+                                    </h1>
+
+                                    <div className="flex flex-wrap justify-center gap-4">
+                                        {project.contributors.map((contributor, idx) => (
+                                            <a
+                                                key={idx}
+                                                href={contributor.github}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="px-5 py-2 text-white font-medium bg-[#0a0a0a] border border-[#0ef]/50 rounded-lg 
+                       hover:bg-[#0ef] hover:text-black hover:shadow-[0_0_15px_#0ef] transition duration-300"
+                                            >
+                                                {contributor.name}
+                                            </a>
+                                        ))}
+                                    </div>
+                                </div>
+                            )
+                        }
+
+
                         <button
                             className="mt-3 px-4 py-2 bg-[#23bec9] text-white mr-3 rounded-lg font-bold hover:bg-[#08c]"
                             onClick={() => setSelectedProject(project)}
