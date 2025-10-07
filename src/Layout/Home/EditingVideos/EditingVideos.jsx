@@ -6,17 +6,12 @@ export default function EditingVideos() {
     {
       id: 1,
       title: "Podcast Demo",
-      link: "https://drive.google.com/file/d/1AL8c3IaWd9g_g_m2KkZTn2SOcT-AZCpn/preview",
+      link: "https://drive.google.com/file/d/1ndxgV73au0eoN21olpAw8z6oprEgDR-r/preview",
     },
     {
       id: 2,
       title: "Travel Cinematic Edit",
-      link: "https://drive.google.com/file/d/1HvbBYcHvw3R0NjfErgzQAjzHNrreUfFe/preview",
-    },
-    {
-      id: 3,
-      title: "Short Documentary Cut",
-      link: "https://drive.google.com/file/d/YOUR_VIDEO_ID_3/preview",
+      link: "https://drive.google.com/file/d/1sFDWdqM_IYPIYAKGx-S6gWbzdZKzZSz-/preview",
     },
   ];
 
