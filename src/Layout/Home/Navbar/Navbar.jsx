@@ -53,7 +53,13 @@ const Navbar = () => {
                             <Link to="projects" smooth={true} duration={500} className='hover:bg-[#56158b] p-2 hover:rounded-lg cursor-pointer'>Project</Link>
                             <Link to="projects" smooth={true} duration={500} className='hover:bg-[#56158b] p-2 hover:rounded-lg cursor-pointer'>EditingHighlights</Link>
                             <Link to="contact" smooth={true} duration={500} className='hover:bg-[#56158b] p-2 hover:rounded-lg cursor-pointer'>Contact</Link>
-                            <button type='button' onClick={() => window.open("www.facebook.com", "_blank")} className='p-3 bg-orange-500 rounded-xl hover:bg-orange-300'>Resume</button>
+                            <button type='button' onClick={() => window.open("https://drive.google.com/file/d/17b-hTA7puUo5Y3JyX5f2xzO7EVxo_r5L/view?usp=sharing", "_blank")} className='px-9 py-3 bg-[#0ef] rounded-3xl text-black font-bold shadow-[0_0_5px_#0ef,0_0_25px_#0ef] 
+             hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_30px_cyan] 
+             transition-all duration-300 mb-3'>Resume</button>
+                            <button type='button' onClick={() => window.open("https://drive.google.com/file/d/15S7V5Qzig13Fc3rpjDZ-R2DbfhOZWAr4/view?usp=sharing", "_blank")} className='px-9 py-3 bg-[#fff] rounded-3xl text-black font-bold
+             shadow-[0_0_5px_#fff,0_0_25px_#fff] 
+             hover:shadow-[0_0_5px_#fff,0_0_25px_#fff,0_0_30px_#fff] 
+             transition-all duration-300'>Curriculum Vitae</button>
                         </ul>
                     </div>
                     <button

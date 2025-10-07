@@ -16,7 +16,8 @@ import {
     SiAxios,
     SiOrigin,
     SiHeadlessui,
-    SiTypescript
+    SiTypescript,
+    SiRedis
 } from 'react-icons/si';
 import { motion } from "framer-motion"
 
@@ -55,6 +56,7 @@ const Skills = () => {
         { name: "MySQL", icon: <SiMysql size={40} /> },
         { name: "MongoDB", icon: <SiMongodb size={40} /> },
         { name: "PostgreSQL", icon: <SiPostgresql size={40} /> },
+        { name: "Redis", icon: <SiRedis size={40} /> },
     ];
 
     const paymentGateway = [

@@ -65,6 +65,10 @@ const projects = [
                 github: "https://github.com/ifratul36",
             }
         ],
+        roles: [
+            "Team Leader",
+            "Backend Developer"
+        ],
         technologies: ["Next.js", "Gemini AI", "Node.js", "Loading Skeleton", "MongoDB", "Express.js", "Tailwind CSS", "ShadCN UI", "React Toastify", , "Next Auth", "JWT", "Animate.css"],
         description: "QUIZMANIA is an educational quiz application that dynamically generates quizzes using AI, adapts difficulty based on user performance, and provides real-time feedback and analytics. The frontend is built with modern web technologies to ensure responsiveness, usability, and seamless interaction.",
         liveLink: "https://quizzmaniaa.vercel.app",
@@ -142,9 +146,9 @@ const Projects = () => {
                 </h2>
             </div>
 
-            <div className="flex flex-wrap justify-left gap-8">
+            <div className="flex flex-wrap justify-center md:justify-start gap-8">
                 {projects.map((project, index) => (
-                    <div key={index} className={`bg-white/10 p-5 rounded-xl w-80 transition hover:bg-[#0ef] hover:shadow-[0_0_30px_#0ef] shadow-[0_0_20px_#0ef] text-center`}>
+                    <div key={index} className={`bg-white/10 p-5 rounded-xl w-80 transition hover:bg-[#0ef] hover:shadow-[0_0_30px_#0ef] shadow-[0_0_20px_#0ef]`}>
                         <h3 className="text-xl font-semibold text-left mb-4 text-white para-strong-word">{project.name}</h3>
                         <Carousel className="rounded-lg" autoPlay={true} interval={2000} infiniteLoop={true}>
                             {
@@ -155,23 +159,45 @@ const Projects = () => {
                         </Carousel>
                         {
                             project?.contributors && project.contributors.length > 0 && (
-                                <div className="mt-10 text-center">
-                                    <h1 className="text-xl md:text-2xl font-bold text-[#0ef] mb-4 uppercase tracking-wide drop-shadow-[0_0_10px_#0ef]">
+                                <div className="mt-3">
+                                    <h1 className="text-xl md:text-2xl font-bold text-[#fff] mb-2 uppercase tracking-wide drop-shadow-[0_0_10px_#fff] text-left">
                                         Contributors
                                     </h1>
 
-                                    <div className="flex flex-wrap justify-center gap-4">
+                                    <div className="flex flex-wrap gap-1">
                                         {project.contributors.map((contributor, idx) => (
-                                            <a
+                                            <Link
                                                 key={idx}
-                                                href={contributor.github}
+                                                to={contributor.github}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="px-5 py-2 text-white font-medium bg-[#0a0a0a] border border-[#0ef]/50 rounded-lg 
-                       hover:bg-[#0ef] hover:text-black hover:shadow-[0_0_15px_#0ef] transition duration-300"
+                                                className="px-3 py-1 text-white font-medium bg-[#0a0a0a] border border-[#0ef]/50 rounded-lg 
+                       hover:bg-[#0ef] hover:text-black hover:shadow-[0_0_15px_#0ef] transition duration-300 hover:border-black"
                                             >
                                                 {contributor.name}
-                                            </a>
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </div>
+                            )
+                        }
+                        {
+                            project?.roles && project.roles.length > 0 && (
+                                <div className="mt-2">
+                                    <h1 className="text-xl md:text-2xl font-bold text-[#fff] mb-2 uppercase tracking-wide drop-shadow-[0_0_10px_#fff] text-left">
+                                        roles
+                                    </h1>
+
+                                    <div className="flex flex-wrap gap-1">
+                                        {project.roles.map((role, idx) => (
+                                            <button
+                                                key={idx}
+                                                rel="noopener noreferrer"
+                                                className="px-3 py-1 text-white font-medium bg-[#0a0a0a] border border-[#0ef]/50 rounded-lg 
+                       hover:bg-[#0ef] hover:text-black hover:shadow-[0_0_15px_#0ef] transition duration-300 hover:border-black"
+                                            >
+                                                {role}
+                                            </button>
                                         ))}
                                     </div>
                                 </div>

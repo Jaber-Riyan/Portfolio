@@ -16,10 +16,10 @@ const AboutMe = () => {
           </h5>
 
           <p className='text-gray-300 text-xl mb-5'>
-            I’m a MERN stack developer passionate about crafting full-stack solutions that solve real-world problems.
+            I’m a Full stack developer passionate about crafting full-stack solutions that solve real-world problems.
             From sleek React interfaces to robust Node.js APIs, I bridge creativity and functionality.
-            I thrive in the JavaScript ecosystem, building RESTful APIs with Express and Node, designing NoSQL databases with MongoDB,
-            and creating dynamic UIs using React and Tailwind CSS.
+            I thrive in the Typescript ecosystem, building RESTful APIs with Express JS and Node JS, designing NoSQL databases MongoDB with Mongoose,
+            and creating dynamic UIs using React JS and Tailwind CSS.
           </p>
 
           <h5 className='text-2xl text-white font-bold mb-3 para-heading'>
@@ -27,7 +27,7 @@ const AboutMe = () => {
           </h5>
 
           <p className='text-gray-300 text-xl'>
-            My journey into programming started with a simple question — <span className='italic'>“Why am I learning this? Will it truly impact my life?”</span>  
+            My journey into programming started with a simple question — <span className='italic'>“Why am I learning this? Will it truly impact my life?” </span>  
             That curiosity turned into passion.  
             <br /><br />
 
@@ -44,7 +44,7 @@ const AboutMe = () => {
             Later, I transitioned into software development using <span className='para-strong-word italic'>Python and Django</span>,
             but I felt there was more to explore in modern web development.  
             That’s when I joined <span className='para-strong-word italic'>Programming Hero Level-1, Batch-10</span>,
-            where I mastered <span className='para-strong-word italic'>HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB</span>,
+            where I mastered <span className='para-strong-word italic'>HTML, CSS, JavaScript, React, Firebase, Node.js, Express.js, MongoDB</span>,
             along with version control using <span className='para-strong-word italic'>Git & GitHub.</span>  
             <br /><br />
 
@@ -55,7 +55,7 @@ const AboutMe = () => {
 
             Currently, I’ve joined <span className='para-strong-word italic'>Programming Hero Level-2, Batch-5</span>,
             where I’m diving deeper into advanced technologies like  
-            <span className='para-strong-word italic'>TypeScript, Mongoose, PostgreSQL, Redux, and RTK Query.</span>  
+            <span className='para-strong-word italic'> TypeScript, Mongoose, Passport JS, Redis, PostgreSQL, Redux, and RTK Query.</span>  
             <br /><br />
 
             <h5 className='text-2xl text-white font-bold mb-3 para-heading'>💡 The Type of Work I Enjoy</h5>
