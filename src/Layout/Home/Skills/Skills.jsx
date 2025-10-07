@@ -10,7 +10,13 @@ import {
     SiRedux,
     SiMongoose,
     SiPostgresql,
-    SiStripe
+    SiStripe,
+    SiFirebase,
+    SiPassport,
+    SiAxios,
+    SiOrigin,
+    SiHeadlessui,
+    SiTypescript
 } from 'react-icons/si';
 import { motion } from "framer-motion"
 
@@ -20,17 +26,21 @@ const Skills = () => {
         { name: "C++", icon: <SiCplusplus size={40} /> },
         { name: "Python", icon: <SiPython size={40} /> },
         { name: "JavaScript", icon: <FaJs size={40} /> },
+        { name: "TypeScript", icon: <SiTypescript size={40} /> },
     ];
 
     const frontendSkills = [
-        { name: "HTML", icon: <FaHtml5 size={40} /> },
-        { name: "CSS", icon: <FaCss3Alt size={40} /> },
+        { name: "HTML5", icon: <FaHtml5 size={40} /> },
+        { name: "CSS3", icon: <FaCss3Alt size={40} /> },
         { name: "React.js", icon: <FaReact size={40} /> },
-        { name: "Redux", icon: <SiRedux size={40} /> },
+        { name: "Redux RTK Query", icon: <SiRedux size={40} /> },
         { name: "Next JS", icon: <SiNextdotjs size={40} /> },
+        { name: "Firebase", icon: <SiFirebase size={40} /> },
         { name: "Tailwind CSS", icon: <SiTailwindcss size={40} /> },
-        { name: "DaisyUI", icon: <SiDaisyui size={40} /> },
-        { name: "DaisyUI", icon: <SiShadcnui size={40} /> },
+        { name: "Daisy UI", icon: <SiDaisyui size={40} /> },
+        { name: "Headless UI", icon: <SiHeadlessui size={40} /> },
+        { name: "Origin UI", icon: <SiOrigin size={40} /> },
+        { name: "ShadCN UI", icon: <SiShadcnui size={40} /> },
         { name: "Bootstrap", icon: <SiBootstrap size={40} /> },
     ];
 
@@ -38,6 +48,7 @@ const Skills = () => {
         { name: "Node.js", icon: <FaNodeJs size={40} /> },
         { name: "Express.js", icon: <SiExpress size={40} /> },
         { name: "Mongoose", icon: <SiMongoose size={40} /> },
+        { name: "Passport JS", icon: <SiPassport size={40} /> },
     ];
 
     const databases = [
@@ -86,6 +97,7 @@ const Skills = () => {
         { name: "GitHub", icon: <FaGithub size={40} /> },
         { name: "Redux Dev Tool", icon: <SiRedux size={40} /> },
         { name: "React Dev Tool", icon: <FaReact size={40} /> },
+        { name: "Axios", icon: <SiAxios size={40} /> },
     ];
 
     return (
