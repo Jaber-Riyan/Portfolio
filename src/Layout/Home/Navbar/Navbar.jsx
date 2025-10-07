@@ -11,7 +11,7 @@ const Navbar = () => {
             <Link to="about" smooth={true} duration={500} className='text-glow cursor-pointer'>About</Link>
             <Link to="skills" smooth={true} duration={500} className='text-glow cursor-pointer'>Skills</Link>
             <Link to="projects" smooth={true} duration={500} className='text-glow cursor-pointer'>Projects</Link>
-            <Link to="editingHighlights" smooth={true} duration={500} className='text-glow cursor-pointer'>EditingHighlights</Link>
+            <Link to="editingHighlights" smooth={true} duration={500} className='text-glow cursor-pointer'>Editing Highlights</Link>
             <Link to="contact" smooth={true} duration={500} className='text-glow cursor-pointer'>Contact</Link>
         </>
 
