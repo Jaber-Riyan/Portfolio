@@ -34,21 +34,21 @@ const Skills = () => {
     const frontendSkills = [
         { name: "HTML5", icon: <FaHtml5 size={40} /> },
         { name: "CSS3", icon: <FaCss3Alt size={40} /> },
-        { name: "React.js", icon: <FaReact size={40} /> },
+        { name: "React JS", icon: <FaReact size={40} /> },
         { name: "Redux RTK Query", icon: <SiRedux size={40} /> },
         { name: "Next JS", icon: <SiNextdotjs size={40} /> },
         { name: "Firebase", icon: <SiFirebase size={40} /> },
         { name: "Tailwind CSS", icon: <SiTailwindcss size={40} /> },
+        { name: "Bootstrap", icon: <SiBootstrap size={40} /> },
         { name: "Daisy UI", icon: <SiDaisyui size={40} /> },
         { name: "Headless UI", icon: <SiHeadlessui size={40} /> },
         { name: "Origin UI", icon: <SiOrigin size={40} /> },
         { name: "ShadCN UI", icon: <SiShadcnui size={40} /> },
-        { name: "Bootstrap", icon: <SiBootstrap size={40} /> },
     ];
 
     const backendSkills = [
-        { name: "Node.js", icon: <FaNodeJs size={40} /> },
-        { name: "Express.js", icon: <SiExpress size={40} /> },
+        { name: "Node JS", icon: <FaNodeJs size={40} /> },
+        { name: "Express JS", icon: <SiExpress size={40} /> },
         { name: "Mongoose", icon: <SiMongoose size={40} /> },
         { name: "Passport JS", icon: <SiPassport size={40} /> },
     ];
