@@ -10,10 +10,31 @@ import Contact from './Contact/Contact';
 import EditingVideos from './EditingVideos/EditingVideos';
 
 const Home = () => {
+    const [isVisible, setIsVisible] = React.useState(true);
+    const [lastScrollY, setLastScrollY] = React.useState(0);
+
+    React.useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > lastScrollY) {
+                setIsVisible(false);
+            } else {
+                setIsVisible(true);
+            }
+            setLastScrollY(window.scrollY);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [lastScrollY]);
     return (
         <>
             {/* navbar section start */}
-            <nav className='sticky z-30 top-0 bg-[#2e064e]'>
+            {/* className={`sticky top-0 z-50 w-full border-b bg-background/100 backdrop-blur supports-[backdrop-filter]:bg-background/60 ${
+
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      } transition-transform duration-300`} */}
+            <nav className={`sticky shadow-[0_0_10px_#fff] top-0 z-50 w-full bg-[#2e064e] ${isVisible ? "translate-y-0" : "-translate-y-full"
+                } transition-transform duration-300`}>
                 <div className='w-[90%] mx-auto'>
                     <Navbar></Navbar>
                 </div>

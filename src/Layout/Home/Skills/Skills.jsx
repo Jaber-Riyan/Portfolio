@@ -1,9 +1,8 @@
-import React from 'react';
-import { FaCss3Alt, FaDatabase, FaGitAlt, FaGithub, FaHtml5, FaJs, FaNodeJs, FaReact } from 'react-icons/fa';
+import { FaCss3Alt, FaGitAlt, FaGithub, FaHtml5, FaJs, FaNodeJs, FaReact } from 'react-icons/fa';
 import { FaC, FaS } from 'react-icons/fa6';
 import { PiTreeStructureFill } from 'react-icons/pi';
 import {
-    SiDjango, SiExpress, SiMysql, SiPython, SiThealgorithms, SiTailwindcss,
+    SiExpress, SiMysql, SiPython, SiThealgorithms, SiTailwindcss,
     SiBootstrap, SiMongodb, SiCplusplus, SiDaisyui,
     SiNextdotjs,
     SiShadcnui,
@@ -17,7 +16,9 @@ import {
     SiOrigin,
     SiHeadlessui,
     SiTypescript,
-    SiRedis
+    SiRedis,
+    SiMinutemailer,
+    SiCloudinary,
 } from 'react-icons/si';
 import { motion } from "framer-motion"
 
@@ -97,9 +98,11 @@ const Skills = () => {
     const tools = [
         { name: "Git", icon: <FaGitAlt size={40} /> },
         { name: "GitHub", icon: <FaGithub size={40} /> },
+        { name: "Cloudinary", icon: <SiCloudinary size={40} /> },
         { name: "Redux Dev Tool", icon: <SiRedux size={40} /> },
         { name: "React Dev Tool", icon: <FaReact size={40} /> },
         { name: "Axios", icon: <SiAxios size={40} /> },
+        { name: "Node Mailer", icon: <SiMinutemailer size={40} /> },
     ];
 
     return (
