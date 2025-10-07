@@ -22,7 +22,7 @@ const AboutMe = () => {
 
                         As I explored, I discovered the world of software applications—built by developers who all started as programmers. I realized that every skilled developer first learns programming fundamentals before diving into development. With this in mind, I enrolled in <span className='para-strong-word italic'>Phitron Batch-3.</span> to build a strong foundation in programming. <br /><br />
 
-                        During this time, I worked hard, solving problems and learning key technologies like <span className='para-strong-word italic'>C, C++, Data Structures & Algorithms (DSA), MySQL, and Python</span>. After a year of dedication, I transitioned into software development with Python and Django. However, I felt something was missing in my learning process. <br /><br />
+                        During this time, I worked hard, solving problems and learning key technologies like <span className='para-strong-word italic'>C, C++, Data Structures & Algorithms (DSA), MySQL, and Python</span>. After a year of dedication, I transitioned into software development with<span className='para-strong-word italic'> Python and Django</span>. However, I felt something was missing in my learning process. <br /><br />
 
                         To fill that gap, I joined <span className='para-strong-word italic'>Programming Hero Batch-10 Level-1</span>, where I learned <span className='para-strong-word italic'>HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB</span>, and version control tools like <span className='para-strong-word italic'>Git & GitHub</span>. I also explored essential web development tools and best practices. <br /><br />
 
@@ -33,7 +33,7 @@ const AboutMe = () => {
 
                         <h5 className='text-2xl text-white font-bold mb-3 para-heading'>🎬 My Hobbies & Interests</h5>
                         <p className='text-gray-300 text-xl'>
-                            Outside of programming, I enjoy watching movies. Exploring different genres and storytelling styles helps me relax and refresh my mind, giving me new perspectives and creativity for my work.
+                            Outside of programming, I enjoy watching movies, exploring new technologies, watching coding tutorials, and improving my English skills in my free time. Immersing myself in different genres and storytelling styles helps me relax and refresh my mind, while also providing fresh perspectives and creative inspiration for my work. Beyond these hobbies, I aspire to explore the world and uncover its hidden beauty—those quiet, lesser-known wonders that spark curiosity and awe.
                         </p><br />
 
                         <span className='para-strong-line italic'>✨ To me, coding isn’t just syntax—it’s solving puzzles that make people’s lives easier.</span><br /><br />

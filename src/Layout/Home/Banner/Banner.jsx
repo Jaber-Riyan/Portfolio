@@ -10,7 +10,7 @@ const Banner = () => {
     const textRef = useRef(null)
     useEffect(() => {
         const typed = new Typed(textRef.current, {
-            strings: ["Frontend Developer", "Web Developer", "Full Stack Developer", "MERN Stack Developer",],
+            strings: ["Full Stack Developer", "Web Developer", "Frontend Developer", "Video Editor",],
             typeSpeed: 50,
             backSpeed: 30,
             backDelay: 1000,
@@ -24,15 +24,15 @@ const Banner = () => {
     return (
         <div className='lg:flex-row flex-col-reverse flex gap-y-16 justify-center items-center'>
             <div className='text-white'>
-            <h3 className='md:text-4xl text-3xl font-semibold mb-2'>Hey there! I'm</h3>
-            <h1 className='md:text-5xl text-[32px] md:ml-6 ml-3 font-bold mb-2'>Jaber Ahmed Riyan</h1>
+                <h3 className='md:text-4xl text-3xl font-semibold mb-2'>Hey there! I'm</h3>
+                <h1 className='md:text-5xl text-[32px] md:ml-6 ml-3 font-bold mb-2'>Jaber Ahmed Riyan</h1>
                 <h3 className='md:text-[35px] text-[28px] font-bold'>
                     <span className='md:inline-block hidden'>A Passionate</span> <span className='md:hidden inline-block'>I am a</span>
                     <span className='text-[#0ef] ml-2' ref={textRef}></span>
                 </h3>
                 <div className='mb-6'>
                     <p className='md:w-[90%] mt-6 text-gray-300 md:text-xl text-[1rem]'>
-                        🚀 I'm a MERN Stack Developer with expertise in React.js, Node.js, Express.js, and MongoDB. I specialize in building modern, scalable, and efficient web applications that provide seamless user experiences.
+                        🚀 I'm a Full Stack Developer with expertise in React.js, Redux, Node.js, Express.js, and MongoDB. I specialize in building modern, scalable, and efficient web applications that provide seamless user experiences.
                     </p>
                 </div>
                 <div className="flex gap-5">
@@ -53,14 +53,24 @@ const Banner = () => {
                 </div>
 
                 {/* resume button  */}
-                <div className='mt-8'>
+                <div className='mt-8 space-x-3'>
                     <button
+                        onClick={() => window.open('https://drive.google.com/file/d/17b-hTA7puUo5Y3JyX5f2xzO7EVxo_r5L/view?usp=sharing', '_blank')}
                         className="px-9 py-3 bg-[#0ef] rounded-3xl text-black font-bold
              shadow-[0_0_5px_#0ef,0_0_25px_#0ef] 
              hover:shadow-[0_0_5px_cyan,0_0_25px_cyan,0_0_30px_cyan] 
              transition-all duration-300"
                     >
                         Resume
+                    </button>
+                    <button
+                        onClick={() => window.open('https://drive.google.com/file/d/15S7V5Qzig13Fc3rpjDZ-R2DbfhOZWAr4/view?usp=sharing', '_blank')}
+                        className="px-9 py-3 bg-[#fff] rounded-3xl text-black font-bold
+             shadow-[0_0_5px_#fff,0_0_25px_#fff] 
+             hover:shadow-[0_0_5px_#fff,0_0_25px_#fff,0_0_30px_#fff] 
+             transition-all duration-300"
+                    >
+                        CV
                     </button>
 
                 </div>

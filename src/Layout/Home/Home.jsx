@@ -7,6 +7,7 @@ import Skills from './Skills/Skills';
 import Academic from './Academic/Academic';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
+import EditingVideos from './EditingVideos/EditingVideos';
 
 const Home = () => {
     return (
@@ -51,10 +52,18 @@ const Home = () => {
             </section>
             {/* academic qualification section end */}
 
-            {/* projects section start  */}
+            {/* Video Editing Section Start  */}
             <section id='projects' className="bg-[linear-gradient(130deg,#1A1A4D_20%,#562D5C_90%)] bg-no-repeat pb-20 w-full bg-cover bg-center pt-20 border-b-2 border-gray-600">
                 <section className='lg:w-[80%] w-[95%] mx-auto'>
                     <Projects></Projects>
+                </section>
+            </section>
+            {/* Video Editing Section End  */}
+
+            {/* projects section start  */}
+            <section id='editingHighlights' className="bg-[linear-gradient(130deg,#1A1A4D_20%,#562D5C_90%)] bg-no-repeat pb-20 w-full bg-cover bg-center pt-20 border-b-2 border-gray-600">
+                <section className='lg:w-[80%] w-[95%] mx-auto'>
+                    <EditingVideos></EditingVideos>
                 </section>
             </section>
             {/* projects section end  */}
@@ -68,8 +77,8 @@ const Home = () => {
             {/* contact section end  */}
 
             {/* footer section start  */}
-            <footer className=''>
-                {/* <Footer></Footer> */}
+            <footer className="bg-[linear-gradient(130deg,#2e064e_40%,#562D5C_80%)] bg-no-repeat p-5 w-full bg-cover bg-center border-b-2 border-gray-600">
+                <Footer></Footer>
             </footer>
             {/* footer section end  */}
         </>

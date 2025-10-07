@@ -28,9 +28,9 @@ const Academic = () => {
                                 <li>3rd Semester: <span className="font-semibold text-white">3.58</span></li>
                                 <li>4th Semester: <span className="font-semibold text-white">3.74</span></li>
                                 <li>5th Semester: <span className="font-semibold text-white">3.95</span></li>
-                                <li>6th Semester: <span className="font-semibold text-white">Pending</span></li>
-                                <li>7th Semester: <span className="font-semibold text-white">Ongoing</span></li>
-                                <li>8th Semester: <span className="font-semibold text-white">Start on August 2025</span></li>
+                                <li>6th Semester: <span className="font-semibold text-white">3.93</span></li>
+                                <li>7th Semester: <span className="font-semibold text-white">Pending</span></li>
+                                <li>8th Semester: <span className="font-semibold text-white">Ongoing</span></li>
                             </ul>
                         </div>
                     </div>
